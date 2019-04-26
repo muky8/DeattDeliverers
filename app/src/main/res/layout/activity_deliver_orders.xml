@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliverOrders">
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1">
+
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="56dp"
+            android:layout_height="29dp"
+            android:layout_alignTop="@+id/backbtn"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo" />
+
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignTop="@+id/backbtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/logout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rel3"
+        >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="top"
+            android:text="Welcome Text"
+            android:textAppearance="@style/welcome_olu" />
+
+        <TextView
+            android:id="@+id/deliver_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignLeft="@+id/title"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:text="Deliver Orders"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/deliver_restaurant"
+            app:track="@drawable/switchselect"
+            android:layout_alignLeft="@+id/deliver_restaurant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/switch3"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/switch3"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_toRightOf="@+id/switch3"
+            android:text="Pickup"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel3"
+        android:layout_marginTop="10dp">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="250dp"
+            android:id="@+id/lottieview"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            app:lottie_fileName="loadingcircle.json"
+            android:layout_height="250dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel1"
+    >
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:id="@+id/relativeitem"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Name"
+            android:textColor="#232323"
+            android:fontFamily="@font/raleway_bold"
+            android:id="@+id/name"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="10dp"
+            android:textColor="#232323"
+            android:id="@+id/address"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_alignLeft="@+id/name"
+            android:text="Address" />
+
+
+        <TextView
+            android:id="@+id/newname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="4dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Damilola Majek" />
+
+
+        <TextView
+            android:id="@+id/addresstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_alignEnd="@+id/newname"
+            android:layout_alignRight="@+id/newname"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="19 Female Bronze " />
+
+
+        <TextView
+            android:id="@+id/orderdetailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addresstxt"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="123dp"
+            android:visibility="invisible"
+            android:textSize="13sp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Order Details"
+            android:textColor="@color/black" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/addresstxt"
+            android:layout_marginTop="26dp"
+            android:background="#D3D3D3" />
+
+        <TextView
+            android:id="@+id/vieworder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addresstxt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="32dp"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="View Order"
+            android:textColor="#FF4501" />
+
+
+
+
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/relativeitem3"
+        android:background="#F5F5F5"
+        android:visibility="gone"
+        android:layout_below="@id/relativeitem">
+
+
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_counter"
+            android:padding="10dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="1"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:layout_marginRight="4dp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="Dry beans - 100"
+            android:textColor="#000000"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:id="@+id/buttonrel"
+            android:layout_below="@id/food">
+
+
+
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/button1"
+                android:text="close"
+                android:fontFamily="@font/raleway_medium"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_btn"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:textColor="#111"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Pickup"
+                android:layout_toEndOf="@+id/button1"
+                android:background="@drawable/rounded_btn2"
+                android:layout_toRightOf="@+id/button1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

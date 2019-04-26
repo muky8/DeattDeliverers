@@ -1,0 +1,83 @@
+ query restaurantOrders{
+  restaurantOrders{
+    id
+    name
+    orders{
+      id
+      qty
+      foods{
+        name
+        price
+
+      }
+      cart{
+        name
+        address
+      }
+    }
+  }
+}
+
+ query delivererOrders{
+ delivererOrders{
+    id
+    name
+
+    orders{
+      id
+      qty
+      foods{
+        name
+        price
+
+      }
+
+      cart{
+        name
+        address
+        phonenumber
+
+      }
+    }
+  }
+}
+
+
+
+mutation verifyOrder($id:String! $email:String $order_four_digits:String){
+  verifyOrder(id:$id
+    email:$email
+    order_four_digits:$order_four_digits
+  )
+}
+
+
+query deliveryOrders($status: OrderStatus!){
+  delivererOrders {
+    id
+    name
+    orders(where: {
+      status: $status
+    }) {id
+      qty
+      status
+      foods{
+        name
+        price
+
+      }
+      restaurant {
+        name
+      }
+
+       cart{
+        name
+        address
+        phonenumber
+
+      }
+    }
+  }
+}
+
+

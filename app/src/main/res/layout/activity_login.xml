@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="76dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toStartOf="@+id/deatt"
+            android:layout_toLeftOf="@+id/deatt"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/deatt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginRight="132dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Deatt"
+            android:textAppearance="@style/welcome_olu"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/relative4"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:fontFamily="@font/ralewayregular"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:textSize="20sp"
+             />
+
+
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:textColorHighlight="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_height="50dp"
+            android:hint="Phonenumber"
+            android:theme="@style/MyEditTextTheme"
+
+            android:id="@+id/phoneedittext"
+            android:layout_below="@id/title"
+            android:inputType="number"
+            android:layout_marginTop="20dp" />
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:id="@+id/inputedit"
+    app:passwordToggleEnabled="true"
+    android:layout_below="@id/phoneedittext"
+    android:layout_marginTop="20dp">
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:theme="@style/MyEditTextTheme"
+        android:backgroundTint="@color/colorAccent"
+        android:textColorHint="@color/textcolor"
+        android:inputType="textPassword"
+        android:id="@+id/passwordedittext" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_btnlg"
+            android:text="Log in"
+            android:fontFamily="@font/raleway_bold"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/loginbutton"
+            android:layout_below="@id/inputedit"
+            android:layout_marginTop="40dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

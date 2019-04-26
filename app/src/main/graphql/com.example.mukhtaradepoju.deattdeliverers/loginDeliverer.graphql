@@ -1,0 +1,9 @@
+mutation loginDeliverer($phonenumber:String! $password:String!) {
+  loginDeliverer(phonenumber:$phonenumber password:$password){
+    token
+        deliverer{
+          lastname
+          firstname
+        }
+  }
+}
